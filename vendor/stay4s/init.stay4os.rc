@@ -1,0 +1,7 @@
+service stay4s_agentd /system_ext/bin/stay4s_agentd
+    class main
+    user system
+    group system readproc
+    socket stay4s_agentd stream 0660 system system
+    seclabel u:r:stay4s_agentd:s0
+    oneshot false

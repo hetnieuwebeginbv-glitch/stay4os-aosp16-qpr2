@@ -1,0 +1,11 @@
+type stay4s_agentd, domain, coredomain;
+type stay4s_agentd_exec, exec_type, system_file_type, file_type;
+
+init_daemon_domain(stay4s_agentd)
+
+allow stay4s_agentd sysfs_thermal:file r_file_perms;
+allow stay4s_agentd sysfs_thermal:dir r_dir_perms;
+allow stay4s_agentd stay4s_agentd_socket:sock_file create_file_perms;
+
+allow system_app stay4s_agentd_socket:sock_file write;
+allow system_app stay4s_agentd:unix_stream_socket connectto;
