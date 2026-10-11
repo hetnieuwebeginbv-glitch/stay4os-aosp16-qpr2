@@ -46,5 +46,21 @@ AOSP source `system/core/libprocessgroup/profiles/cgroups.json` gepatcht:
 - `stay4os_tegu.mk` — Product config
 - `BoardConfig.mk` — Board config
 
+## Structuur
+```
+vendor/stay4s/services/stay4s_agentd.cpp    # Native C++ daemon (UNIX socket)
+vendor/stay4s/init.stay4os.rc               # Init service definition
+device/google/tegu/sepolicy/.../stay4s_agentd.te  # SELinux policy
+scripts/smoke_test.ps1                       # 10-point post-flash test
+scripts/opencode_prompt.md                   # OpenCode deployment prompt
+STRATEGY.md                                  # 2-year roadmap
+```
+
+## Links
+- [Stay4S Hub](http://localhost:8090/hub) — Centrale hub (lokaal)
+- [Stay4S Agent](http://localhost:8090) — Compute Agent v3
+- [GitHub](https://github.com/hetnieuwebeginbv-glitch/stay4os-aosp16-qpr2)
+
 ## License
 AOSP — Apache 2.0
+
