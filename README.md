@@ -61,6 +61,12 @@ STRATEGY.md                                  # 2-year roadmap
 - [Stay4S Agent](http://localhost:8090) — Compute Agent v3
 - [GitHub](https://github.com/hetnieuwebeginbv-glitch/stay4os-aosp16-qpr2)
 
+## Documentatie
+- [FLASH_DRAAIBOEK.md](FLASH_DRAAIBOEK.md) — Compleet flash draaiboek met root-cause analyse
+- [STRATEGY.md](STRATEGY.md) — 2-jaren roadmap (2026-2028)
+- [GEMINI_MASTER_PROMPT.md](GEMINI_MASTER_PROMPT.md) — Master prompt voor Gemini code assistant
+
 ## License
 AOSP — Apache 2.0
+
 
